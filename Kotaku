@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
+#gets all headlines on Kotaku for checking a game's online sentiment
 k_url="https://kotaku.com/"
 data=requests.get(k_url)
 soup=BeautifulSoup(data.content,'html.parser')
